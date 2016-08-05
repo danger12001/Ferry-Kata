@@ -58,9 +58,9 @@ it('should remove a car from the ferry', function(){
   var testFerry = new ferry(3,10);
    var redCar = new car('red', 2);
    testFerry.board(redCar);
-   testFerry.leave(redCar);
-   var results = testFerry.count();
-assert.equal(results, 0);
+  var results = testFerry.leave(redCar);
+  //  var results = testFerry.count();
+assert.equal(results, "The Ferry now holds: 0 car(s) and 0 passengers");
 
 });
 it('should return an error when trying to remove a car from the ferry', function(){
@@ -70,8 +70,6 @@ it('should return an error when trying to remove a car from the ferry', function
 assert.equal(results, "That car doesn't exist");
 
 });
-
-
 
 it("should return a 50% discount if the cars trips is more than 3", function(){
   var testFerry = new ferry(3,10);

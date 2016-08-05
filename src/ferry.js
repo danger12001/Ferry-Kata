@@ -58,6 +58,7 @@ this.leave = function(car){
     cars.splice(index, 1);
     noOfCars--;
     passengers -= car.noOfPassengers;
+    return "The Ferry now holds: " + noOfCars + " car(s) and " + passengers + " passengers";
   }
 else {
   return "That car doesn't exist";
