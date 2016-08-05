@@ -6,10 +6,6 @@ var passengers = 0;
 var colorCount = {};
 var trips = 0;
 
-this.state = function(){
-  var state = "The Ferry holds: " + noOfCars + " car(s) and " + passengers + " passengers";
-  return state;
-};
  this.board = function(car){
 trips ++;
 car.trips += 1;
