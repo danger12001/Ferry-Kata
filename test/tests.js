@@ -70,14 +70,6 @@ it('should return an error when trying to remove a car from the ferry', function
 assert.equal(results, "That car doesn't exist");
 
 });
-it('should return an error when trying to remove a car with a different color from the ferry', function(){
-  var testFerry = new ferry(3,10);
-   var redCar = new car('red', 2);
-   var blueCar = new car('blue', 2);
-    var results =  testFerry.leave(blueCar);
-assert.equal(results, "There is no such car with that color on the ferry");
-
-});
 
 
 
